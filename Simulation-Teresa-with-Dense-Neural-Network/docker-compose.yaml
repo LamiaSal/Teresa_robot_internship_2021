@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+    rosbridge:
+        image: danielrs975/teresa-simulation:0.1
+        ports:
+            - '9090:9090'
+            - '11311:11311'
+        command: ["roslaunch", "rosbridge_server", "rosbridge_websocket.launch"]
+    teresa:
+        image: danielrs975/teresa-simulation:0.1
+        volumes:
+            - /tmp/.X11-unix:/tmp/.X11-unix:ro
+            - /dev/dri:/dev/dri:ro
+        command: ["rosrun", "gazebo_ros", "gzserver", "Teresa_Lightweight.world"]
+        environment:
+            - ROS_MASTER_URI=http://rosbridge:11311
+            - DISPLAY=:1
