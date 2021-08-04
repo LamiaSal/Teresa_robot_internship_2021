@@ -1,6 +1,7 @@
 # Robot Teresa 
 * [Description](#description)
 * [Introduction](#introduction)
+* [Content of this github](#content-of-this-github)
 * [Setting Up the environment](#setting-up-the-environment)
 * [Installation](#installation)
 * [Execute Simulation](#execute-simulation)
@@ -51,6 +52,24 @@ The simulation was used to train and test the neural network. The architecture o
 ![software architecture](./img/project_architecture.png)
 
 The same commands are used to train the robot on the simulator and to control the robot in real life.
+
+# Content of this github
+
+The directory **Dense-neural-network** contains the code to run the dense neural network for simulation and on the robot. You'll find 2 directories:
+    - **Simulation-Teresa-with-Dense-Neural-Network** that contains the code to train on the simulator
+    - **Test-Teresa-with-Dense-Neural-Network** that connects your PC to the camera and the robot to test the model on the real robot. 
+**To test the model**
+At the end of th training onto the simulator, 3 files will be created in the directory **Simulation-Teresa-with-Dense-Neural-Network**. Those files contain the information of the weights learned by the model. You have to copy them and past them into the the directory **Test-Teresa-with-Dense-Neural-Network**.
+
+The directory **Q-learning** contains the code to run the Q learning on the simulator and on the robot. You'll find 2 directories:
+    - **Simulation-Teresa-with-Q-Learning** that contains the code to train on the simulator
+    - **Test-Teresa-with-Q-Learning** that connects your PC to the camera and the robot to test the model on the real robot. 
+**To test the model**
+At the end of the training onto the simulator, copy the directory Model (containing the wieghts) of the direcotry  **Simulation-Teresa-with-Q-learning** in the direcotry **Test-Teresa-with-Q-Learning**.
+
+The directory **img** contains the images for the readme
+
+The directory **teresa-simulation** contains the files for the simulation of the teresa robot trhough the gazebo software.
 
 # Setting Up the environment
 
@@ -183,7 +202,7 @@ Launch ROS bridge
 `roslaunch rosbridge_server rosbridge_websocket.launch`
 
 
-From now, you just need to copy the weights you gain from the training and you can launch the jupyternotebook corresponding to your training (more info on the weights in the readme of the the Test directories).
+From now, you just need to copy the weights you gain from the training and you can launch the jupyternotebook corresponding to your training (more info in the [description](#content-of-this-github) of the directories).
 
 
 # Control the robot via a keyboard
