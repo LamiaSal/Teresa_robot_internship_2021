@@ -1,6 +1,6 @@
 Training of the Dense neural Network on simulator.
 
-More information :
+Continuation of the work of :
 
 **Daniel RODRIGUEZ**, Student at Telecom SudParis, Institut Polytechnique de Paris : (work on the simulation of Teresa for training the Dense neural Network)
 
