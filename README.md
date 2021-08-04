@@ -1,10 +1,12 @@
 # Robot Teresa 
 * [Description](#description)
 * [Introduction](#introduction)
-* [System Requirements](#system-requirements)
+* [Setting Up the environment](#setting-up-the-environment)
 * [Installation](#installation)
 * [Execute Simulation](#execute-simulation)
-* [Execute with the real drone](#execute-with-the-real-drone)
+* [Execute with the real robot](#execute-with-the-real-robot)
+* [Control the robot via a keyboard](#control-the-robot-via-a-keyboard)
+* [Author and Advisor](#author-and-advisor)
 
 # Description
 
@@ -111,7 +113,7 @@ You have to install all the dependencies manually, this includes:
     `$ sudo apt-get install ros-melodic-gazebo-ros-pkgs ros-melodic-gazebo-ros-control`
 
 
-# Execute the simulation
+# Execute Simulation
 This part concerns the directories : Simulation-Teresa-with-Q-Learning and  Simulation-Teresa-with-Dense-Neural-Network
 
 To run the simulation it will be necessary to use 4 terminals.
