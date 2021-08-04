@@ -202,4 +202,3 @@ and then
 
 Advisor: Prof. **Hossam Afifi** (Telecom SudParis, Institut Polytechnique de Paris)
 
-
