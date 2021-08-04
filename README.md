@@ -10,13 +10,26 @@
 
 This repo constitutes the continuation of the work done by :
 
-Daniel RODRIGUEZ, Student at Telecom SudParis, Institut Polytechnique de Paris : https://github.com/danielrs975/robot_controller (work on the simulation of Teresa for training the Dense neural Network)
+**Daniel RODRIGUEZ**, Student at Telecom SudParis, Institut Polytechnique de Paris : (work on the simulation of Teresa for training the Dense neural Network)
 
-Saad Lahlali & Quentin Adi (Student at Telecom SudParis, Institut Polytechnique de Paris) : https://github.com/saad2050lahlali/Teresa-Robot-Test (work on the appplying the neural network on the Teresa Robot)
+- https://github.com/danielrs975/robot_controller
+
+- https://github.com/danielrs975/teresa-simulation
 
 
 
-Advisor: Prof. Hossam Afifi (Telecom SudParis, Institut Polytechnique de Paris)
+**Saad Lahlali & Quentin Adi** (Student at Telecom SudParis, Institut Polytechnique de Paris) : (work on appplying the neural network on the Teresa Robot)
+
+- https://github.com/saad2050lahlali/Teresa-Robot-Test 
+
+
+**Pedro Branco & Gabriel Pires-Sobreira** (Student at Ensta Paris, Institut Polytechnique de Paris) : (work on a reinforcement learning with a drone)
+
+- https://github.com/pedrobranco0410/Bebop-with-Reinforcement-Learning
+
+
+
+Advisor: Prof. **Hossam Afifi** (Telecom SudParis, Institut Polytechnique de Paris)
 
 
 This collaboration was made during my summer internship at Telecom SudParis. The project was the application of Reinforcement Learning in a Medical Robot to teach it the task to center a detected person in order later to teach him the task of following a person. 
@@ -114,8 +127,11 @@ This part concerns the directories : Test-Teresa-with-Q-Learning and Test-Teresa
 
 To run with the real drone it is almost the same thing.It will be necessary to use 1 terminal.
 
+## 1. wifi and camera
 
-## 1. On your PC
+Turn on the giraff wifi and the camera (the configuration are already done you just have to aliment it through an external battery preferably to allow the robot to move freely).
+
+## 2. On your PC
 
 ### 1.1 Open a terminal and launch roscore
 
@@ -127,13 +143,13 @@ configure the wifi as followed (the ip are defined in the jupyternotebooks)
 
 ![wifi configuration](./img/Giraff_rout2.png)
 
-## 2. Third Terminal
+## 3. On the robot PC
 
-On the robot PC : Launch ROS bridge
+Launch ROS bridge
 
 `roslaunch rosbridge_server rosbridge_websocket.launch`
 
-## 2. add indications to follow 
+you can lauch the jupyternotebooks you want in the Test directories.
 
 
 # Control the robot via a keyboard
@@ -148,8 +164,8 @@ and then
 
 # Author and Advisor
 
-Lamia Salhi, Student at Telecom SudParis and Eurecom, Institut Polytechnique de Paris
+**Lamia Salhi**, Student at Telecom SudParis and Eurecom, Institut Polytechnique de Paris
 
-Advisor: Prof. Hossam Afifi (Telecom SudParis, Institut Polytechnique de Paris)
+Advisor: Prof. **Hossam Afifi** (Telecom SudParis, Institut Polytechnique de Paris)
 
 
