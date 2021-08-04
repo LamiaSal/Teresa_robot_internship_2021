@@ -180,7 +180,8 @@ Launch ROS bridge
 
 `roslaunch rosbridge_server rosbridge_websocket.launch`
 
-you can lauch the jupyternotebooks you want in the Test directories.
+
+From now, you just need to copy the weights you gain from the training and you can launch the jupyternotebook corresponding to your training (more info on the weights in the readme of the the Test directories).
 
 
 # Control the robot via a keyboard
