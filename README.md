@@ -55,26 +55,30 @@ The same commands are used to train the robot on the simulator and to control th
 
 # Content of this github
 
+1. **Dense-neural-network**
 The directory **Dense-neural-network** contains the code to run the dense neural network for simulation and on the robot. You'll find 2 directories:
 - **Simulation-Teresa-with-Dense-Neural-Network** that contains the code to train on the simulator
 - **Test-Teresa-with-Dense-Neural-Network** that connects your PC to the camera and the robot to test the model on the real robot. 
+    
+    **To test the model**
+    
+    At the end of th training onto the simulator, 3 files will be created in the directory **Simulation-Teresa-with-Dense-Neural-Network**. Those files contain the information of the weights learned by the model. You have to copy them and past them into the the directory **Test-Teresa-with-Dense-Neural-Network**.
 
-**To test the model**
-At the end of th training onto the simulator, 3 files will be created in the directory **Simulation-Teresa-with-Dense-Neural-Network**. Those files contain the information of the weights learned by the model. You have to copy them and past them into the the directory **Test-Teresa-with-Dense-Neural-Network**.
-
-
+2. **Q-learning**
 The directory **Q-learning** contains the code to run the Q learning on the simulator and on the robot. You'll find 2 directories:
 - **Simulation-Teresa-with-Q-Learning** that contains the code to train on the simulator
 - **Test-Teresa-with-Q-Learning** that connects your PC to the camera and the robot to test the model on the real robot. 
 
-**To test the model**
-At the end of the training onto the simulator, copy the directory Model (containing the wieghts) of the direcotry  **Simulation-Teresa-with-Q-learning** in the direcotry **Test-Teresa-with-Q-Learning**.
+    **To test the model**
 
+    At the end of the training onto the simulator, copy the directory Model (containing the wieghts) of the direcotry  **Simulation-Teresa-with-Q-learning** in the direcotry **Test-Teresa-with-Q-Learning**.
 
+3. **teresa-simulation**
+The directory **teresa-simulation** contains the files for the simulation of the teresa robot trhough the gazebo software.
+
+4. **img**
 The directory **img** contains the images for the readme
 
-
-The directory **teresa-simulation** contains the files for the simulation of the teresa robot trhough the gazebo software.
 
 # Setting Up the environment
 
