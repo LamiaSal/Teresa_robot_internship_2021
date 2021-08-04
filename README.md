@@ -55,8 +55,9 @@ You have to install all the dependencies manually, this includes:
 
 
 # Execute the simulation
+This part concerns the directories : Simulation-Teresa-with-Q-Learning and  Simulation-Teresa-with-Dense-Neural-Network
 
-To run the simulation it will be necessary to use 3 terminals.
+To run the simulation it will be necessary to use 4 terminals.
 
 ## 1. First Terminal
 
@@ -80,7 +81,7 @@ Launch ROS bridge
 `pip3 install rospkg`
 
 
-## 6. Sixth Terminal
+## 4. Fourth Terminal
 
 Launch the jupyter notebook
 
@@ -94,15 +95,22 @@ chose the environment venv that you've created and launch the jupyternotebook fr
 
 
 # Execute with the real robot
+This part concerns the directories : Test-Teresa-with-Q-Learning and Test-Teresa-with-Dense-Neural-Network
 
-To run with the real drone it is almost the same thing.It will be necessary to use ******** terminals.
+To run with the real drone it is almost the same thing.It will be necessary to use 1 terminal.
 
-## 1. First Terminal
 
-On your PC : This terminal is responsable to launch roscore
+## 1. On your PC
+
+### 1.1 Open a terminal and launch roscore
 
 `roscore`
 
+### 1.2 Connect the PC to the camera and the robot through the wifi Giraff_rout2
+
+configure the wifi as followed (the ip are defined in the jupyternotebooks)
+
+![wifi configuration](./img/Giraff_rout2.png)
 
 ## 2. Third Terminal
 
@@ -110,4 +118,15 @@ On the robot PC : Launch ROS bridge
 
 `roslaunch rosbridge_server rosbridge_websocket.launch`
 
-## 2. add indications to follow and observation to command manually
+## 2. add indications to follow 
+
+
+# Control the robot via a keyboard
+
+you can also control the robot manually via a keyboard. A keyboard is already connected and configured in the laboratory room. All you need is to open a terminal on the robot and run these commands For instance:
+
+`ssh 192.168.1.13`
+
+and then
+
+`rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
