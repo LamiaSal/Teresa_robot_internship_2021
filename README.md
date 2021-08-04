@@ -224,6 +224,10 @@ and then
 
 `rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
 
+# Notes on the code
+
+For the time this code detect the body (and if the body is not detected the face of a person) with the Haarcascade filter. Once it is detected a rectangle is defined around the face or the body. The robot learns to have those rectangles inside the desired rectangle placed at the center of the camera view point. 
+
 # Author and Advisor
 
 **Lamia Salhi**, Student at Telecom SudParis and Eurecom, Institut Polytechnique de Paris
