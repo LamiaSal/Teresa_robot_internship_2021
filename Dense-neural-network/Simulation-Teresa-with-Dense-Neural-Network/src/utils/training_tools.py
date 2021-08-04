@@ -12,8 +12,8 @@ OBSERVATION_FILE = 'env_observation' # Name of the file where we get the respons
 Training Configuration data
 """
 IMAGE_SIZE = (800, 800)
-SQUARE_SIZE_X = 225
-SQUARE_SIZE_Y = 495
+SQUARE_SIZE_X = 226
+SQUARE_SIZE_Y = 496
 
 STEP_X = 5
 STEP_Y = 10
