@@ -8,11 +8,26 @@
 
 # Description
 
-Implementation of a two neural networks on the Teresa robot with Gazebo simulator:
+This repo constitutes the continuation of the work done by :
+
+Daniel RODRIGUEZ, Student at Telecom SudParis, Institut Polytechnique de Paris : https://github.com/danielrs975/robot_controller (work on the simulation of Teresa for training the Dense neural Network)
+
+Saad Lahlali & Quentin Adi (Student at Telecom SudParis, Institut Polytechnique de Paris) : https://github.com/saad2050lahlali/Teresa-Robot-Test (work on the appplying the neural network on the Teresa Robot)
+
+
+
+Advisor: Prof. Hossam Afifi (Telecom SudParis, Institut Polytechnique de Paris)
+
+
+This collaboration was made during my summer internship at Telecom SudParis. The project was the application of Reinforcement Learning in a Medical Robot to teach it the task to center a detected person in order later to teach him the task of following a person. 
+
+For that, two neural networks were implemented on the Teresa robot with Gazebo simulator:
 - a Dense Neural Network
 - Dueling Deep Q learning algorithm with 
+The filter haarcascdes was used to detect the body or the face of humans.
 
-The aim is that the robot identify and try to center a the detected person.
+**Obervation**:
+This filter is not optimal. In later works I advise to use CNN for detection and then a neural network for reinforcement learning.
 
 # Introduction
 
@@ -130,3 +145,11 @@ you can also control the robot manually via a keyboard. A keyboard is already co
 and then
 
 `rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
+
+# Author and Advisor
+
+Lamia Salhi, Student at Telecom SudParis and Eurecom, Institut Polytechnique de Paris
+
+Advisor: Prof. Hossam Afifi (Telecom SudParis, Institut Polytechnique de Paris)
+
+
