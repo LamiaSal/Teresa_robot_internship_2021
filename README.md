@@ -135,9 +135,11 @@ Launch ROS bridge
 
 `roslaunch rosbridge_server rosbridge_websocket.launch`
 
-(if you encounter an error about not installed rospk, just install it via : 
+(if you encounter an error about not installed rospk, just install it via  : 
 
 `pip3 install rospkg`
+
+you can install it in your envirnment by symply activating it before installing the rospkg. If you do so you will have to activate the ./venv each time before launching the ros bridge.
 
 
 ## 4. Fourth Terminal
