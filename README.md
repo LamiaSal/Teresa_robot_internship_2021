@@ -122,7 +122,9 @@ You have two choices :
     `conda install --file requirements_all.txt`
     or (if it doesn’t work)
     `while read requirement; do conda install --channel=conda-forge --yes $requirement; done < requirements_all.txt`
-
+8. launch anaconda
+    `anaconda-navigator`
+    and chose the venv environment then launch jupyternotebook
 more on conda environments: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 
 
