@@ -35,6 +35,9 @@ The same commands are used to train the robot on the simulator and to control th
 **Jupyter Notebook**:
 
     latest version
+  
+
+**create an environment of work**:
 
 # Installation
 You have to install all the dependencies manually, this includes:
