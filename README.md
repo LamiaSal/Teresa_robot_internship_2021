@@ -50,7 +50,9 @@ The simulation was used to train and test the neural network. The architecture o
 
 The same commands are used to train the robot on the simulator and to control the robot in real life.
 
-# System Requirements
+# Setting Up the environment
+
+## System Requirements
 
 **Operational system**:
 
@@ -59,13 +61,40 @@ The same commands are used to train the robot on the simulator and to control th
 **Python Version**:
 
     Python 3.6.9
+## Set Up
 
-**Jupyter Notebook**:
+1. Clone this repository.
+2. Create a folder inside the project called venv
+You have two choices :
 
-    latest version
-  
+### using virtual venv
 
-**create an environment of work**:
+3. Install:
+    'sudo apt-get install virtualenv'
+
+4. Create a virtual environment with the virtualenv command. Example: virtualenv --python=python3 venv/
+5. Activate the environment. source venv/bin/activate
+6. Install python dependecies. You have three options here:
+- If you want to install only the dependencies of the Robot library: pip install -r requirements.txt
+- If you want to install the dependencies of the Robot library and training libraries (Tensorflow): pip install -r requirements_training.txt
+- If you want to use the Jupyter notebook local: pip install -r requirements_local_setup.txt
+
+### using anaconda environment
+
+3. Install anaonda
+4. Create the conda environment in the ./venv directory : 
+    `$  conda create --prefix ./venv python=3.6`
+5. Check that the environùent was correctly created : 
+    `conda env list`
+6. Activate the environment : 
+    `conda activate ./venv`
+7. Install the  dependecies 
+    `conda install --file requirements_all.txt`
+    or (if it doesn’t work)
+    `while read requirement; do conda install --channel=conda-forge --yes $requirement; done < requirements_all.txt`
+
+more on conda environments: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+
 
 # Installation
 You have to install all the dependencies manually, this includes:
